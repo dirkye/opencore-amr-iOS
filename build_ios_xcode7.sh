@@ -1,5 +1,5 @@
 #!/bin/sh
-### Modified from http://blog.csdn.net/favormm/article/details/6772097
+
 set -xe
 
 DEVELOPER=`xcode-select -print-path`
@@ -12,6 +12,8 @@ LIBS="libopencore-amrnb.a libopencore-amrwb.a"
 # or AMR Codecs as Shared Libraries http://www.penguin.cz/~utx/amr
 
 mkdir -p $DEST
+
+./configure
 
 for arch in $ARCHS; do
 	make clean
@@ -73,6 +75,3 @@ for i in $LIBS; do
 	done
 	xcrun lipo -create -output $DEST/lib/$i $input
 done
-
-
-

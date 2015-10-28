@@ -3,7 +3,7 @@ opencore-amr-iOS
 
 Forked from https://github.com/feuvan/opencore-amr-iOS.
 
-Add build script for XCode 7 support and bitcode enabled.
+Added build script for XCode 7 support and bitcode enabled.
 
 
 iOS port of opencore-amr
