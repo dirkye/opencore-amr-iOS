@@ -9,10 +9,11 @@ Added build script for XCode 7 support and bitcode enabled.
 iOS port of opencore-amr
 
 Refer to `README` for opencore-amr info which is from original package.
-Use `build_ios_xcode6.sh` to build. Current AppStore submission requires Xcode 7.
+Run `./configure` then `build_ios.sh` to build.
+Then use `opencore-amrnb.framework` or `opencore-amrwb.framework`
 
-Build_ios_*.sh is modified from http://blog.csdn.net/favormm/article/details/6772097
+packaging refer to https://www.jianshu.com/p/9eef3afdae11
 
-Note that AMR-NB is for narrow band http://en.wikipedia.org/wiki/Adaptive_Multi-Rate_audio_codec
+Build_ios.sh is modified from https://chromium.googlesource.com/webm/libwebp/+/refs/heads/master/iosbuild.sh
 
 For AMR-WB encoding, refer to http://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/ or AMR Codecs as Shared Libraries http://www.penguin.cz/~utx/amr
